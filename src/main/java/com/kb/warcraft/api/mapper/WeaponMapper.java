@@ -5,7 +5,7 @@ import com.kb.warcraft.domain.Weapon;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface WeaponMapper {
 
     WeaponMapper INSTANCE = Mappers.getMapper(WeaponMapper.class);

@@ -5,9 +5,9 @@ import com.kb.warcraft.api.model.GuildListDTO;
 import com.kb.warcraft.services.GuildService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
 @RequestMapping("/api/guild/")
 public class GuildController {
     private final GuildService guildService;

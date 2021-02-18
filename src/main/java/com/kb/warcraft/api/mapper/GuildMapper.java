@@ -5,7 +5,7 @@ import com.kb.warcraft.domain.Guild;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface GuildMapper {
 
     GuildMapper INSTANCE = Mappers.getMapper(GuildMapper.class);

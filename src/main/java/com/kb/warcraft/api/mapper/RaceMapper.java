@@ -5,7 +5,7 @@ import com.kb.warcraft.domain.Race;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface RaceMapper {
 
     RaceMapper INSTANCE = Mappers.getMapper(RaceMapper.class);

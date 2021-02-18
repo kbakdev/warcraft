@@ -1,11 +1,9 @@
 package com.kb.warcraft.services;
 
 import com.kb.warcraft.api.model.GuildDTO;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public interface GuildService {
 
     List<GuildDTO> getAllGuilds();
