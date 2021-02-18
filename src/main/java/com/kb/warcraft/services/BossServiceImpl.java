@@ -22,6 +22,13 @@ public class BossServiceImpl implements BossService {
         this.bossMapper = bossMapper;
     }
 
+    public List<BossDTO> getAllBosses() {
+        return bossRepository.findAll()
+                .stream()
+                .map(bossMapper::bossToBossDTO)
+                .collect(Collectors.toList());
+    }
+
     @Override
     public BossDTO getBossById(Long id) {
         return bossMapper.bossToBossDTO(bossRepository.findById(id).get());

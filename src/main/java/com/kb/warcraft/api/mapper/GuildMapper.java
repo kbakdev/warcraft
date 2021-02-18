@@ -9,8 +9,6 @@ import org.mapstruct.factory.Mappers;
 public interface GuildMapper {
 
     GuildMapper INSTANCE = Mappers.getMapper(GuildMapper.class);
-
     GuildDTO guildToGuildDTO(Guild guild);
-
     Guild guildDTOToGuild(GuildDTO guildDTO);
 }

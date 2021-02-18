@@ -9,9 +9,7 @@ import org.mapstruct.factory.Mappers;
 public interface BossMapper {
 
     BossMapper INSTANCE = Mappers.getMapper(BossMapper.class);
-
     BossDTO bossToBossDTO(Boss boss);
-
     Boss bossDTOToBoss(BossDTO bossDTO);
 }
 

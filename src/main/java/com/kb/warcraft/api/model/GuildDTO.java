@@ -2,10 +2,9 @@ package com.kb.warcraft.api.model;
 
 import lombok.Data;
 
-import java.util.List;
-
 @Data
 public class GuildDTO {
+
     Long id;
     String name;
     Integer members;

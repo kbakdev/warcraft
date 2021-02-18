@@ -4,6 +4,7 @@ import com.kb.warcraft.api.mapper.WeaponMapper;
 import com.kb.warcraft.api.model.WeaponDTO;
 import com.kb.warcraft.domain.Weapon;
 import com.kb.warcraft.repositories.WeaponRepository;
+import org.springframework.data.rest.webmvc.RepositoryRestController;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
